@@ -1,0 +1,36 @@
+spring:
+  redis:
+    host: 8.141.60.147
+    port: 6379
+    password:
+    jedis:
+      pool:
+        max-idle: 8
+        min-idle: 0
+        max-active: 8
+        max-wait: -1ms
+    database: 0
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://8.141.60.147:3306/myblog?&serverTimezone=UTC
+    username: root
+    password: hxd_20000820
+    hikari:
+      max-lifetime: 60000
+      connection-timeout: 60000
+      idle-timeout: 60000
+      login-timeout: 5
+      validation-timeout: 3000
+
+
+
+shiro:
+  redis:
+    host: 8.141.60.147
+    port: 6379
+    password:
+    max-idle: 8
+    min-idle: 0
+    max-active: 8
+    max-wait: -1
+
